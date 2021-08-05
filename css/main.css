@@ -1,0 +1,55 @@
+/* General Style's */
+html {
+    height: 100%;
+}
+body {
+    background-color: #EEEEEE;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    height: 100%;
+}
+header {
+    background-color: #512D6D;
+    color: #EEEEEE;
+    height: 120px;
+    width: 100%;
+}
+nav {
+    position: absolute;
+    top: 130px;
+    left: 10px;
+}
+nav ol li a {
+    color: #00C1D4;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav ol li a:hover {
+    color: #F8485E;
+}
+.card--image {
+    height: 200px;
+    width: 200px;
+}
+button {
+    background-color: #00C1D4 !important;
+    color: #EEEEEE !important;
+}
+.container__figuras--results {
+    background-color: #F8485E !important;
+    color: #EEEEEE !important;
+    font-size: 26px;
+}
+/* Proyecto figuras */
+.figuras__container--images {
+    height: 150px;
+    width: 150px;
+}
+.container__figuras--images {
+    cursor: pointer;
+}
+/* Proyecto estadisticas */
+.container__card--footer {
+    background-color: #F8485E;
+    color: #EEEEEE;
+    font-size: 20px;
+}

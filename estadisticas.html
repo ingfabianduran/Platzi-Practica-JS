@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estadisticas de Salarios</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+        <header class="d-flex flex-column justify-content-center align-items-center">
+            <h1>Estadisticas de Salarios</h1>
+        </header>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="figuras.html">Figuras Geometricas</a></li>
+                <li class="breadcrumb-item active"><a href="descuentos.html">Calculo de Descuentos</a></li>
+                <li class="breadcrumb-item"><a href="estadisticas.html">Estadisticas de Salarios</a></li>
+                <li class="breadcrumb-item"><a href="salarios.html">Salarios Mundiales</a></li>
+            </ol>
+        </nav>
+        <div class="container">
+            <div class="row min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/Graficos.png" class="img-fluid card-img-top card--image" alt="Graficos">
+                        </div>
+                        <div class="card-body">
+                            <form id="mainForm">
+                                <div class="mb-3">
+                                    <label for="salario" class="form-label fw-bold h4">Salario:</label>
+                                    <input type="number" class="form-control form-control-lg" id="salario" placeholder="Salario del empleado">
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <button type="submit" class="btn btn-lg">Agregar Salario</button>
+                                    <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#modalSalarios">Ver Salarios</button>
+                                </div>
+                            </form>                     
+                        </div>
+                        <div id="results" class="card-footer text-center container__card--footer">
+                            <strong>Promedio: </strong>0  <strong>Moda: </strong>0  <strong>Mediana: </strong>0
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalSalarios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Lista de Salarios</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="listaSalarios" class="list-group">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/estadisticas/data.js"></script>
+        <script src="./js/estadisticas/calculos.js"></script>
+        <script src="./js/estadisticas/main.js"></script>
+    </body>
+</html>
